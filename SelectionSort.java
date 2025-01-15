@@ -1,10 +1,15 @@
+
+import java.io.*;
+
+public class SelectionSort {
+    public static void main(String[] args) throws IOException {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         bw.write("Input Arr: ");
         bw.flush();
         String[] strArr = br.readLine().split(" ");
-
 
         int [] arr = new int[strArr.length];
         for (int i = 0; i < strArr.length; i++) {
@@ -32,3 +37,5 @@
         for (int j : arr) {
             System.out.print(j + " ");
         }
+    }
+}
